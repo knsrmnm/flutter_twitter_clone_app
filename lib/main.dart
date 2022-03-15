@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_twitter_clone_app/constant.dart';
+import 'package:flutter_twitter_clone_app/screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -83,16 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-          ],
-        ),
-      ),
+      body: HomeScreen(),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         elevation: 0,
